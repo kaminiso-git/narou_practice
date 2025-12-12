@@ -1,9 +1,15 @@
 <template>
   <div :class="$style.container">
     <div :class="$style.title">Title</div>
-    <div>{{ 'Apple '.repeat(40).trim() }}</div>
+    <div>{{ `${fruit} `.repeat(40).trim() }}</div>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  fruit: string
+}>()
+</script>
 
 <style module>
 .container {

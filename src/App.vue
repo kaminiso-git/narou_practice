@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import MainContent from './components/MainContent.vue'
 import SideBar from './components/SideBar.vue'
+const fruit = ref('Apple')
 </script>
 
 <template>
   <div :class="$style.container">
     <SideBar />
-    <MainContent />
+    <MainContent :fruit="fruit" />
   </div>
 </template>
 
