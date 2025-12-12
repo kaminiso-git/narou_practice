@@ -4,6 +4,15 @@ import SideBar from './components/SideBar.vue'
 </script>
 
 <template>
-  <SideBar />
-  <MainContent />
+  <div :class="$style.container">
+    <SideBar />
+    <MainContent />
+  </div>
 </template>
+
+<style module>
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
