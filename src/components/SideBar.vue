@@ -1,6 +1,9 @@
 <template>
   <div :class="$style.container">
-    <SideBarButton /><SideBarButton /><SideBarButton /><SideBarButton />
+    <SideBarButton label="Apple" />
+    <SideBarButton label="Banana"/>
+    <SideBarButton label="Orange"/>
+    <SideBarButton label="Lemon"/>
   </div>
 </template>
 

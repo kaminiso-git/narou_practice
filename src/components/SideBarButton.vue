@@ -1,8 +1,14 @@
 <template>
   <div :class="$style.container">
-    <div>Apple</div>
+    <div>{{ label }}</div>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  label: string
+}>()
+</script>
 
 <style module>
 .container {
