@@ -20,7 +20,6 @@ defineProps<{
 
 <style module>
 .container {
-  border: 1px solid red;
   width: 1000px;
   margin: auto;
   height: 100%;
@@ -35,5 +34,6 @@ defineProps<{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 40px;
 }
 </style>
