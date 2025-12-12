@@ -7,7 +7,7 @@ const fruit = ref('Apple')
 
 <template>
   <div :class="$style.container">
-    <SideBar />
+    <SideBar v-model:fruit="fruit" />
     <MainContent :fruit="fruit" />
   </div>
 </template>

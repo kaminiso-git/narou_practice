@@ -1,14 +1,15 @@
 <template>
   <div :class="$style.container">
-    <SideBarButton label="Apple" />
-    <SideBarButton label="Banana"/>
-    <SideBarButton label="Orange"/>
-    <SideBarButton label="Lemon"/>
+    <SideBarButton label="Apple" @click="fruit = 'Apple'" />
+    <SideBarButton label="Banana" @click="fruit = 'Banana'" />
+    <SideBarButton label="Orange" @click="fruit = 'Orange'"/>
+    <SideBarButton label="Lemon" @click="fruit = 'Lemon'"/>
   </div>
 </template>
 
 <script setup lang="ts">
 import SideBarButton from './SideBarButton.vue'
+const fruit = defineModel<string>('fruit')
 </script>
 
 <style module>
